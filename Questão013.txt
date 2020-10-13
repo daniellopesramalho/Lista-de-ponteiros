@@ -1,0 +1,9 @@
+celula *busca (int x, celula *le) {
+celula *le;
+   le = malloc (sizeof (celula));
+   int achou = 0;
+   while (p != NULL && !achou) {
+      if (p->conteudo == x) achou = 1;
+      p = p->prox; }
+   if (achou) return p;
+   else return NULL;

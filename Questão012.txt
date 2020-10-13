@@ -1,0 +1,34 @@
+O uso de ponteiros para funções em C serve principalmente para definir, em tempo de execução, qual função será executada, sem a necessidade de escrever o nome da função, de forma explícita naquele ponto do código.
+Em geral, a definição de qual função será executada é feita em um outro ponto do código, fazendo o ponteiro apontar para a função desejada.
+
+Exemplo de código de ponteiro para função:
+
+
+TIPOFuncaoSemParametros *PtrParaFuncSemParametros;
+TIPOFuncaoComParametros *PtrParaFuncComParametros;
+
+int Print()
+{
+
+}
+
+int Load(int x, float z)
+
+{
+
+}
+
+int main()
+{
+
+    ...
+    PtrParaFuncSemParametros = Print; // define qual para função o ponteiro aponta
+    ...
+    (*PtrParaFuncSemParametros) (); // realiza a chamada da função através do ponteiro
+
+    ...
+    PtrParaFuncComParametros = Load; // define qual para função o ponteiro aponta
+    ...
+    (*PtrParaFuncComParametros) (3,2.45); // realiza a chamada da função através do ponteiro
+
+}

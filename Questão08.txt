@@ -1,0 +1,1 @@
+O primeiro programa printa o valor dos elementos do vetor. E o segundo printa o endereco de memoria que estes vetores estao alocados.

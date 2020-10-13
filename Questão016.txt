@@ -1,0 +1,1 @@
+Para fazer uso da função que irá retornar o tempo de execução de um programa é necessário chamar a biblioteca time.h.
